@@ -5,9 +5,9 @@ describe Bookmark do
     it 'returns a list of bookmarks' do
       connection = PG.connect(dbname: 'manager_bookmark_test')
 
-      Bookmark.create(url: "https://www.google.com")
-      Bookmark.create(url: "https://www.twitter.com")
-      Bookmark.create(url: "https://www.bbc.com")
+      Bookmark.create(url: "https://www.google.com", title: "Google")
+      Bookmark.create(url: "https://www.twitter.com", title: "Twitter")
+      Bookmark.create(url: "https://www.bbc.com", title: "BBC")
 
       bookmarks = Bookmark.all
 
@@ -19,7 +19,7 @@ describe Bookmark do
 
   describe '.create' do 
     it 'creates a new bookmark' do 
-      Bookmark.create(url: 'http://www.youtube.com')
+      Bookmark.create(url: 'http://www.youtube.com', title: "Youtube")
 
       expect(Bookmark.all).to include 'http://www.youtube.com'
     end
