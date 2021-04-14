@@ -8,6 +8,12 @@ This is a bookmark manager. A bookmark manager is a website to maintain a collec
 
 To build a simple web app with a database.
 
+**After cloning the repo**
+
+```sh
+bundle install
+```
+
 **Creating databases from scratch**
 
 1. Connect to psql
