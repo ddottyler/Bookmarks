@@ -5,6 +5,6 @@ feature 'Adding a new bookmark' do
     fill_in('title', with: 'CodeWars')
     click_button('Submit')
 
-    expect(page).to have_content('http://www.codewars.com') 
+    expect(page).to have_link('CodeWars', href: "http://www.codewars.com") 
   end
 end
