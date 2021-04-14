@@ -1,10 +1,10 @@
 # Bookmarks
 
-**Running the program**
+**About this project**
+This is a bookmark manager. A bookmark manager is a website to maintain a collection of bookmarks (URLs). You can use it to save a webpage you found useful. You can add tags to the webpages you saved to find them later. You can browse bookmarks other users have added. You can comment on the bookmarks.
 
-```sh
-rackup
-```
+**Project goals**
+To build a simple web app with a database.
 
 **Creating databases from scratch**
 
@@ -25,4 +25,16 @@ CREATE DATABASE manager_bookmark;
 
 ```sh
 01_create_bookmarks_table.sql
+```
+
+**Running the tests**
+
+```sh
+rspec
+```
+
+**Running the program**
+
+```sh
+rackup
 ```
