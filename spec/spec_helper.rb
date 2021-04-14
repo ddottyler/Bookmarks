@@ -14,9 +14,10 @@
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 
+require_relative './setup_test_database'
+
 # Set the environment to "test"
 ENV['ENVIRONMENT'] = 'test'
-ENV['RACK_ENV'] = 'test'
 
 # Bring in the contents of the `app.rb` file
 require File.join(File.dirname(__FILE__), '..', 'app.rb')
