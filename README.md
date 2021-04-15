@@ -29,7 +29,7 @@ CREATE DATABASE manager_bookmark;
 \c bookmark_manager;
 ```
 
-4. Run the query we have saved in the file
+4. Run the query we have saved in the file to create the bookmarks table
 
 ```sh
 01_create_bookmarks_table.sql
@@ -47,11 +47,13 @@ CREATE DATABASE manager_bookmark_test;
 \c bookmark_manager_test;
 ```
 
-7. Run the query we have saved in the file
+7. Run the query we have saved in the file to create the bookmarks table
 
 ```sh
 02_create_bookmarks_test_table.sql
 ```
+
+REPEAT THIS FOR BOTH TEST AND PRODUCTION DATABASES FOR THE USERS AND COMMENTS TABLES. SQL COMMANDS CAN BE FOUND IN DB/MIGRATIONS.
 
 **Running the tests**
 
