@@ -1,4 +1,7 @@
 <h1>Here are your bookmarks</h1>
+<% if @user %>
+  <h1>Welcome, <%= @user.email %></h1>
+<% end %>
 <p>
   <%= flash[:notice] %>
 </p>

@@ -5,6 +5,7 @@ gem "rubocop", require: false
 gem "sinatra"
 gem 'pg'
 gem "sinatra-flash"
+gem 'bcrypt'
 
 gem "capybara", require: false, group: :test
 gem "rspec", require: false, group: :test
