@@ -8,6 +8,8 @@ This is a bookmark manager. A bookmark manager is a website to maintain a collec
 
 To build a simple web app with a database.
 
+Note - css required. 
+
 **After cloning the repo**
 
 ```sh
